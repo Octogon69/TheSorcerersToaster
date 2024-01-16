@@ -11,5 +11,6 @@ public class Weapon : MonoBehaviour
     public void Fire()
     {
         GameObject fireball = Instantiate(fireballPrefab, firepoint.position, firepoint.rotation);
+        fireball.GetComponent<Rigidbody2D>().AddForce(firepoint.up * fireforce, ForceMode2D.Impulse);
     }
 }
