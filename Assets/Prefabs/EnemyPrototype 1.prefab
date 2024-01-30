@@ -114,7 +114,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b5fed47945778a4e98bf266e353b444, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playerAwarenessDistance: 100
+  _playerAwarenessDistance: 5
 --- !u!50 &8380445241519792329
 Rigidbody2D:
   serializedVersion: 4

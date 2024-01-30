@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
+    // speed and rotation speed of enemies that are configuarable
     [SerializeField]
     private float _speed;
 
@@ -14,11 +15,14 @@ public class EnemyMovement : MonoBehaviour
     private Rigidbody2D _RBD2;
     private PlayerAwarenessContoller playerAwarenessContoller;
     private Vector2 _targetDirection;
+    private float _changeDirectionCooldown;
 
     private void Awake()
     {
+        
         _RBD2 = GetComponent<Rigidbody2D>();
         playerAwarenessContoller = GetComponent<PlayerAwarenessContoller>();
+        _targetDirection = transform.up;
     }
 
 
@@ -33,22 +37,38 @@ public class EnemyMovement : MonoBehaviour
 
     private void updateTargetDirection()
     {
+        // calls both functions to allow for changing of directions both at player and randomly
+        HandleRandomDirectionChange();
+        HandlePlayerTargeting();
+    }
+
+    private void HandleRandomDirectionChange()
+    {
+        // if the direction cooldown is up the enemies will move either left or right randomly
+        _changeDirectionCooldown -= Time.deltaTime;
+        
+        // the 5 stops them from hugging walls for the most part
+        if(_changeDirectionCooldown <= 5)
+        {
+            float angleChange = Random.Range(-90f, 90f);
+            Quaternion rotation = Quaternion.AngleAxis(angleChange, transform.forward);
+            _targetDirection = rotation * _targetDirection;
+
+            _changeDirectionCooldown = Random.Range(1f, 5f);
+        }
+    }
+
+    private void HandlePlayerTargeting()
+    {
         if (playerAwarenessContoller.AwareOfPlayer)
         {
             _targetDirection = playerAwarenessContoller.DirectionToPlayer;
         }
-        else
-        {
-            _targetDirection = Vector2.zero;
-        }
     }
+
     private void RotateTowardsTarget()
     {
-        if (_targetDirection == Vector2.zero)
-        {
-            return;
-        }
-
+        // allows enemies to rotate to move towards the target
         Quaternion targetRotation = Quaternion.LookRotation(transform.forward, _targetDirection);
         Quaternion rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, _rotationSpeed * Time.deltaTime);
 
@@ -56,14 +76,8 @@ public class EnemyMovement : MonoBehaviour
     }
     private void SetVelocity()
     {
-        if (_targetDirection == Vector2.zero)
-        {
-            _RBD2.velocity = Vector2.zero;
-
-        }
-        else
-        {
+        
             _RBD2.velocity = transform.up * _speed;
-        }
-    }
+     }
+    
 }
