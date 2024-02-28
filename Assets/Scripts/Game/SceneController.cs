@@ -5,9 +5,9 @@ using UnityEngine.SceneManagement;
 public class SceneController : MonoBehaviour
 {
   
-    public void LoadMenuScene()
+    public void LoadLevel1()
     {
-        SceneManager.LoadScene("TestLevel");
+        SceneManager.LoadScene("Level1");
     }
 
     public void NextScene()
@@ -19,4 +19,13 @@ public class SceneController : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+    public void menuscreen()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
+    public void ondeath()
+    {
+        SceneManager.LoadScene("LevelFail");
+    }
+  
 }

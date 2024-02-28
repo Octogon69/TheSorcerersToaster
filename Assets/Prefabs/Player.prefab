@@ -307,7 +307,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ca2d48241547e447a9b935087811252, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _invincibilityDuration: 3
+  _invincibilityDuration: 1
 --- !u!1 &4364586012212493616
 GameObject:
   m_ObjectHideFlags: 0

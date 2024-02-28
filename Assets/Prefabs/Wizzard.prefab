@@ -106,7 +106,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Bullet: {fileID: 6380916431598666344, guid: 437c638ccd320aa4fb8fd388a3b113f5, type: 3}
   BulletPos: {fileID: 867665352881876386}
-  fireforce: 20
+  fireforce: 40
 --- !u!114 &6914342002720337495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -120,7 +120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 4
-  _rotationSpeed: 100
+  _rotationSpeed: 50
 --- !u!50 &346818228976522843
 Rigidbody2D:
   serializedVersion: 4
@@ -160,7 +160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b5fed47945778a4e98bf266e353b444, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playerAwarenessDistance: 1000
+  _playerAwarenessDistance: 100
 --- !u!114 &4638572853261023089
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -173,8 +173,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e678d5c2cf8c8a946960ad106230af8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _currentHealth: 2
-  _maxHealth: 2
+  _currentHealth: 4
+  _maxHealth: 4
   OnDie:
     m_PersistentCalls:
       m_Calls:
