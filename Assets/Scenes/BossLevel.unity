@@ -5910,11 +5910,11 @@ PrefabInstance:
       objectReference: {fileID: 6380916431598666344, guid: 71780162ec301804ca50ba48db7de60e, type: 3}
     - target: {fileID: 4638572853261023089, guid: 5483d96318d37064e86db7852d967a65, type: 3}
       propertyPath: _maxHealth
-      value: 50
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 4638572853261023089, guid: 5483d96318d37064e86db7852d967a65, type: 3}
       propertyPath: _currentHealth
-      value: 50
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 6914342002720337495, guid: 5483d96318d37064e86db7852d967a65, type: 3}
       propertyPath: _speed
@@ -5922,7 +5922,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7816748260238592802, guid: 5483d96318d37064e86db7852d967a65, type: 3}
       propertyPath: m_Name
-      value: ArchWizzard
+      value: ArchWizzardAndeeMuerey
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
