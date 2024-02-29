@@ -1797,6 +1797,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5648066516713501845, guid: 18167cf6ace7e424ebef65b6197cde9c, type: 3}
+      propertyPath: _minimumSpawnTime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8249340319595551855, guid: 18167cf6ace7e424ebef65b6197cde9c, type: 3}
       propertyPath: m_Name
       value: EnemySpawner 1 (1)
@@ -5554,6 +5558,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 356142034842671411, guid: 89fdd72505c5cd1449e709dcfce2b6dc, type: 3}
+      propertyPath: _minimumSpawnTime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4825918156297883069, guid: 89fdd72505c5cd1449e709dcfce2b6dc, type: 3}
       propertyPath: m_LocalPosition.x
       value: -78.45183
@@ -5657,6 +5665,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 356142034842671411, guid: 89fdd72505c5cd1449e709dcfce2b6dc, type: 3}
+      propertyPath: _minimumSpawnTime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4825918156297883069, guid: 89fdd72505c5cd1449e709dcfce2b6dc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 37.49324
@@ -5714,6 +5726,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 356142034842671411, guid: 89fdd72505c5cd1449e709dcfce2b6dc, type: 3}
+      propertyPath: _minimumSpawnTime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4825918156297883069, guid: 89fdd72505c5cd1449e709dcfce2b6dc, type: 3}
       propertyPath: m_LocalPosition.x
       value: -66.197464
@@ -5811,6 +5827,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5648066516713501845, guid: 18167cf6ace7e424ebef65b6197cde9c, type: 3}
+      propertyPath: _minimumSpawnTime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8249340319595551855, guid: 18167cf6ace7e424ebef65b6197cde9c, type: 3}
       propertyPath: m_Name
       value: EnemySpawner 1 (3)
@@ -5890,11 +5910,11 @@ PrefabInstance:
       objectReference: {fileID: 6380916431598666344, guid: 71780162ec301804ca50ba48db7de60e, type: 3}
     - target: {fileID: 4638572853261023089, guid: 5483d96318d37064e86db7852d967a65, type: 3}
       propertyPath: _maxHealth
-      value: 100
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 4638572853261023089, guid: 5483d96318d37064e86db7852d967a65, type: 3}
       propertyPath: _currentHealth
-      value: 100
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 6914342002720337495, guid: 5483d96318d37064e86db7852d967a65, type: 3}
       propertyPath: _speed
@@ -6005,6 +6025,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 356142034842671411, guid: 89fdd72505c5cd1449e709dcfce2b6dc, type: 3}
+      propertyPath: _minimumSpawnTime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4825918156297883069, guid: 89fdd72505c5cd1449e709dcfce2b6dc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 20.05435
@@ -6307,6 +6331,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5648066516713501845, guid: 18167cf6ace7e424ebef65b6197cde9c, type: 3}
+      propertyPath: _minimumSpawnTime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8249340319595551855, guid: 18167cf6ace7e424ebef65b6197cde9c, type: 3}
       propertyPath: m_Name
       value: EnemySpawner 1 (2)
@@ -6330,7 +6358,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2332847713111180591, guid: 9ef46e6f97fc24f4f9e2ba9675b6c509, type: 3}
       propertyPath: m_Name
-      value: PlayerPrototype
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 4242724881867440926, guid: 9ef46e6f97fc24f4f9e2ba9675b6c509, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6398,7 +6426,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7423097055106247911, guid: 9ef46e6f97fc24f4f9e2ba9675b6c509, type: 3}
       propertyPath: OnDie.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: ondeath
+      value: ReloadScene
       objectReference: {fileID: 0}
     - target: {fileID: 7423097055106247911, guid: 9ef46e6f97fc24f4f9e2ba9675b6c509, type: 3}
       propertyPath: OnHealthChange.m_PersistentCalls.m_Calls.Array.data[0].m_Target
