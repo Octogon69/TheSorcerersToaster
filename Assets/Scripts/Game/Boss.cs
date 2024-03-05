@@ -9,7 +9,7 @@ public class Boss : MonoBehaviour
     {
         if (collision.GetComponent<PlayerMovement>())
         {
-            SceneManager.LoadScene("Boss");
+            SceneManager.LoadScene("BossLevel");
         }
 
 
